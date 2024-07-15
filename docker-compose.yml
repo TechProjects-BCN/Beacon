@@ -1,0 +1,17 @@
+---
+services:
+  server:
+    build:
+      context: server
+    stop_signal: SIGINT
+    restart: always
+    ports:
+      - "5000:5000"
+
+  # app:
+  #   build:
+  #     context: app
+  #   stop_signal: SIGINT
+  #   restart: always
+  #   ports:
+  #     - "8888:8888"
